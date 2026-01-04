@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background: #000;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+
+
+/* BOTÃO WHATSAPP */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  text-decoration: none;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+
+
+/* TOOLTIP */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 70px;
+  left: 35%;
+  padding: 8px 14px;
+  color: #fff;
+  background: #59152A;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transform: translateX(-50%) translateY(6px) scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+}
+
+/* Setinha apontando para baixo */
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid #59152A;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+/* Hover / toque */
+.whatsapp-fab:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+/* Exibição automática (3s) */
+.tooltip-show {
+  opacity: 1;
+  animation: tooltip-bounce 0.35s ease-out;
+}
+
+@keyframes tooltip-bounce {
+  0% {
+    transform: translateX(-50%) translateY(8px) scale(0.96);
+  }
+
+  60% {
+    transform: translateX(-50%) translateY(-2px) scale(1.02);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+.img {
+  margin: 0 auto 10px;
+}
