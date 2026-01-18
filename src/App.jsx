@@ -8,58 +8,58 @@ function App() {
 
   const imagens = [
     {
-      src: '/1.jpg',
+      src: 'image/1.jpg',
       title: 'Lanches'
     },
     {
-      src: '/2.jpg',
+      src: 'image/2.jpg',
       title: 'Lanches'
     },
     {
-      src: '/3.jpg',
+      src: 'image/3.jpg',
       title: 'Combos'
     },
     {
-      src: '/4.jpg',
+      src: 'image/4.jpg',
       title: 'Gourmet'
     },
     {
-      src: '/5.jpg',
+      src: 'image/5.jpg',
       title: 'Porções'
     },
     {
-      src: '/6.jpg',
+      src: 'image/6.jpg',
       title: 'Porções'
     },
     {
-      src: '/7.jpg',
+      src: 'image/7.jpg',
       title: 'Jantar'
     },
     {
-      src: '/8.jpg',
+      src: 'image/8.jpg',
       title: 'Frios'
     },
     {
-      src: '/9.jpg',
+      src: 'image/9.jpg',
       title: 'Sobremesa'
     },
     {
-      src: '/10.jpg',
+      src: 'image/10.jpg',
       title: 'Bebidas'
     },
     {
-      src: '/11.jpg',
+      src: 'image/11.jpg',
       title: 'Bebidas'
     },
     {
-      src: '/12.jpg',
+      src: 'image/12.jpg',
       title: 'Açaí'
     },
     {
-      src: '/13.jpg',
+      src: 'image/13.jpg',
     },
     {
-      src: '/14.jpg',
+      src: 'image/14.jpg',
     },
 
   ]
