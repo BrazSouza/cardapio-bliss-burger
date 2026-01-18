@@ -7,20 +7,61 @@ function App() {
   const [whatsIndex, setWhatsIndex] = useState(0)
 
   const imagens = [
-    '/1.jpg',
-    '/2.jpg',
-    '/3.jpg',
-    '/4.jpg',
-    '/5.jpg',
-    '/6.jpg',
-    '/7.jpg',
-    '/8.jpg',
-    '/9.jpg',
-    '/10.jpg',
-    '/11.jpg',
-    '/12.jpg',
-    '/13.jpg',
-    '/14.jpg',
+    {
+      src: '/1.jpg',
+      title: 'Lanches'
+    },
+    {
+      src: '/2.jpg',
+      title: 'Lanches'
+    },
+    {
+      src: '/3.jpg',
+      title: 'Combos'
+    },
+    {
+      src: '/4.jpg',
+      title: 'Gourmet'
+    },
+    {
+      src: '/5.jpg',
+      title: 'Porções'
+    },
+    {
+      src: '/6.jpg',
+      title: 'Porções'
+    },
+    {
+      src: '/7.jpg',
+      title: 'Jantar'
+    },
+    {
+      src: '/8.jpg',
+      title: 'Frios'
+    },
+    {
+      src: '/9.jpg',
+      title: 'Sobremesa'
+    },
+    {
+      src: '/10.jpg',
+      title: 'Bebidas'
+    },
+    {
+      src: '/11.jpg',
+      title: 'Bebidas'
+    },
+    {
+      src: '/12.jpg',
+      title: 'Açaí'
+    },
+    {
+      src: '/13.jpg',
+    },
+    {
+      src: '/14.jpg',
+    },
+
   ]
 
   useEffect(() => {
@@ -67,15 +108,20 @@ function App() {
 
   return (
     <div>
-      {imagens.map((img, i) => (
-        <img
-          key={i}
-          src={img}
-          alt={`Cardápio ${i + 1}`}
-          className="img img-fluid w-100 d-block"
-          loading="lazy"
-        />
+      {imagens.map((item, i) => (
+        <div key={i}>
+          <img
+            src={item.src}
+            alt={`Cardápio ${item.titulo}`}
+            className="img img-fluid w-100 d-block"
+            loading="lazy"
+          />
+          <div className="cardapio-divider">
+            {item.title}
+          </div>
+        </div>
       ))}
+
 
       <button
         type='submit'

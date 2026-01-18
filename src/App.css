@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-  background: #000;
+  /* background: #000; */
 }
 
 body {
@@ -107,4 +107,14 @@ body {
 
 .img {
   margin: 0 auto;
+}
+.cardapio-divider {
+  padding: 0;
+  text-align: center;
+  color: #772601;
+  font-size: .9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: #FEC628;
+  font-family: 'Pacifico', cursive;
 }
