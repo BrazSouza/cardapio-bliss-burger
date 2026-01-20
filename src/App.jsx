@@ -9,51 +9,51 @@ function App() {
   const imagens = [
     {
       src: 'image/1.jpg',
-      title: 'Lanches'
+      title: '🍔Lanches'
     },
     {
       src: 'image/2.jpg',
-      title: 'Lanches'
+      title: '🍔Lanches'
     },
     {
       src: 'image/3.jpg',
-      title: 'Combos'
+      title: '🍔🍟Combos'
     },
     {
       src: 'image/4.jpg',
-      title: 'Gourmet'
+      title: '🥙Gourmet'
     },
     {
       src: 'image/5.jpg',
-      title: 'Porções'
+      title: '🍟Porções'
     },
     {
       src: 'image/6.jpg',
-      title: 'Porções'
+      title: '🍟Porções'
     },
     {
       src: 'image/7.jpg',
-      title: 'Jantar'
+      title: '🍽️Jantar'
     },
     {
       src: 'image/8.jpg',
-      title: 'Frios'
+      title: '🍽️Frios'
     },
     {
       src: 'image/9.jpg',
-      title: 'Sobremesa'
+      title: '🍰Sobremesa'
     },
     {
       src: 'image/10.jpg',
-      title: 'Bebidas'
+      title: '🍷Bebidas'
     },
     {
       src: 'image/11.jpg',
-      title: 'Bebidas'
+      title: '🍷Bebidas'
     },
     {
       src: 'image/12.jpg',
-      title: 'Açaí'
+      title: '🍨Açaí'
     },
     {
       src: 'image/13.jpg',
